@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Author: Øistein, Knut, Jørgen og Simon
+Date: November, 2017
+Purpose: Welcome viewers to Realfagskjelleren and show next opening
+Filename: index.html
+   -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>IT2805</title>
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- Css imports -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/mobile.css" rel="stylesheet" type="text/css">
+    <link href="css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="css/prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+
+    <!-- Add Header -->
+    <script src="./javascript/header.js"></script>
+
+    <div id="content">
+
+        <h1>Assignment 1</h1>
+        <div id="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+
+        <h1>Result</h1>
+        <h1>HTML</h1>
+
+        <pre><code class="language-markup">
+&lt;!DOCTYPE html>
+&lt;html>
+
+&lt;head>
+    &lt;title>HTML5 Video and CSS&lt;/title>
+    &lt;link rel="stylesheet" href="css/style.css">
+&lt;/head>
+        </code></pre>
+        <pre><code class="language-markup">
+&lt;body>
+    &lt;div id="screen">
+
+        </code></pre>
+        <pre><code class="language-markup">
+        &lt;img id="stillphoto" src="img/hovedbygget.png">
+
+        </code></pre>
+        <pre><code class="language-markup">
+        &lt;video muted autoplay loop poster="img/hovedbygget.png">
+
+        </code></pre>
+        <pre><code class="language-markup">
+        &lt;source src="videos/hovedbygget.mp4" type="video/mp4">
+        &lt;source src="videos/hovedbygget.ogv" type="video/ogg">
+        &lt;source src="videos/hovedbygget.webm" type="video/webm">
+
+        </code></pre>
+        <pre><code class="language-markup">
+      &lt;/video>
+
+        &lt;div id="title">
+
+        </code></pre>
+        <pre><code class="language-markup">
+
+            &lt;img src="img/ntnu.png" alt="NTNU" />
+        </code></pre>
+        <pre><code class="language-markup">
+
+        &lt;/div>
+
+    &lt;/div>
+
+    &lt;article class="content">
+        &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.&lt;/p>
+    &lt;/article>
+&lt;/body>
+
+&lt;/html>
+        </code></pre>
+        <h1>CSS</h1>
+
+        <pre><code class="language-css">
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 940px) {
+    video {
+        display: inline;
+    }
+    #stillphoto {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    video {
+        display: none;
+    }
+    #stillphoto {
+        display: inline;
+    }
+}
+
+body {
+    background: white;
+    font-family: arial, sans-serif;
+}
+
+#screen {
+    position: relative;
+}
+
+video,
+img {
+    height: auto;
+    width: 100%;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+p {
+    margin-top: 20px;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+    </code></pre>
+
+        <h1>Javascript</h1>
+    </div>
+
+    <!-- Add footer -->
+    <script src="./javascript/footer.js"></script>
+    <script src="./javascript/scroll.js"></script>
+    <script src="./javascript/detectMobile.js"></script>
+    <script src="./javascript/prism.js"></script>
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value; // Display the default slider value
+
+        // Update the current slider value (each time you drag the slider handle)
+        slider.oninput = function() {
+        output.innerHTML = this.value;
+        }
+    </script>
+</body>
+
+</html>

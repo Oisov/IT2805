@@ -42,7 +42,7 @@
         correctAnswer: 5
     }, {
         question: "Anta du har en kø Q = <4,7,32,72,3> hvor det bakerste"
-            + " elementet representerer hodet til køen"+"\n"+"Hvordan vil køen se ut etter å ha kjørt ENQUEUE(Q,3)?",
+            + " elementet representerer hodet til køen"+"<br/>"+"Hvordan vil køen se ut etter å ha kjørt ENQUEUE(Q,3)?",
         choices: [
             "<3,4,7,32,72,3>",
             "<4,7,32,72,3,3>",
@@ -52,7 +52,7 @@
         correctAnswer: 0
     }, {
         question: "Anta du har en kø Q = <4,7,32,72,3> hvor det bakerste"
-            + " elementet representerer hodet til køen.\n\nHvordan vil køen se ut etter å ha kjørt DEQUEUE(Q)?",
+            + " elementet representerer hodet til køen.<br/><br/>Hvordan vil køen se ut etter å ha kjørt DEQUEUE(Q)?",
         choices: [
             "<3,4,7,32,72,3>",
             "<4,7,32,72,3,3>",
@@ -63,12 +63,12 @@
         correctAnswer: 4
     }, {
         question: "Anta du har en kø Q = <4,7,32,72,3> hvor det bakerste"
-            + " elementet representerer hodet til køen.\n\nHva er det minste antallet ENQUEUE/DEQUEUE-operasjoner du trenger for at køen skal endres til <3,4,7,32,72,3>?",
+            + " elementet representerer hodet til køen.<br/><br/>Hva er det minste antallet ENQUEUE/DEQUEUE-operasjoner du trenger for at køen skal endres til <3,4,7,32,72,3>?",
         choices: [0, 1, 2, 5, 6, 11],
         correctAnswer: 1
     }, {
-        question: "Anta du har en kø Q = <4,7,32,72,3> hvor det bakerste"
-            + " elementet representerer toppen av stacken.\n\nHvordan vil stakken se ut etter å ha kjørt PUSH(S,3)?",
+        question: "Anta du har en stakk S = <4,7,32,72,3> hvor det bakerste"
+            + " elementet representerer toppen av stakken. <br/><br/>Hvordan vil stakken se ut etter å ha kjørt PUSH(S,3)?",
         choices: [
             "<3,4,7,32,72,3>",
             "<4,7,32,72,3,3>",
@@ -78,66 +78,131 @@
         ],
         correctAnswer: 1
     }, {
-        question: "Anta du har en kø Q = <4,7,32,72,3> hvor det bakerste"
-            + " elementet representerer toppen av stacken.\n\n",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+        question: "Anta du har en stakk S = <4,7,32,72,3> hvor det bakerste"
+            + " elementet representerer toppen av stakken. <br/><br/>Hvordan vil stakken se ut etter å ha kjørt POP(S)?",
+        choices: [
+            "<3,4,7,32,72,3>",
+            "<4,7,32,72,3,3>",
+            "<4,7,32,72,3>",
+            "<4,7,32,72>",
+            "<7,32,72,3>",
+        ],
+        correctAnswer: 3
     }, {
-        question: "Anta du har en kø Q = <4,7,32,72,3> hvor det bakerste"
-            + " elementet representerer toppen av stacken.\n\n",
-        choices: [20, 30, 40, 50, 64],
+        question:"Anta du har en stakk S = <4,7,32,72,3> hvor det bakerste elementet representerer toppen av stakken." + "<br/><br/>Hva er det minste antallet PUSH/POP-operasjoner du trenger for at stakken skal endres til <3,4,7,32,72,3>?",
+        choices: [
+            0,
+            1,
+            2,
+            5,
+            6,
+            11
+        ],
         correctAnswer: 4
     }, {
         question: "Anta at du har en sirkulær dobbel lenket liste"
-            + " L = <4,7,32,72,3> hvor HEAD peker på 4-tallet.\n\n",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+            + " L = <4,7,32,72,3> hvor HEAD peker på 4-tallet.<br/><br/>Hvordan vil listen se ut etter LIST-SEARCH(L,4)?",
+        choices: [
+            "<3,4,7,32,72,3>",
+            "<4,7,32,72,3,3>",
+            "<4,7,32,72,3>",
+            "<4,7,32,72>",
+            "<7,32,72,3>"
+        ],
+        correctAnswer: 2
     }, {
         question: "Anta at du har en sirkulær dobbel lenket liste"
-            + " L = <4,7,32,72,3> hvor HEAD peker på 4-tallet.\n\n",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+            + " L = <4,7,32,72,3> hvor HEAD peker på 4-tallet.<br/><br/>Hvordan vil listen se ut etter LIST-INSERT(L,3)?",
+        choices: [
+            "<3,4,7,32,72,3>",
+            "<4,7,32,72,3,3>",
+            "<4,7,32,72,3>",
+            "<4,7,32,72>",
+            "<7,32,72,3>"
+        ],
+        correctAnswer: 0
     }, {
         question: "Anta at du har en sirkulær dobbel lenket liste"
-            + "L = <4,7,32,72,3> hvor HEAD peker på 4-tallet.\n\n",
-        choices: [20, 30, 40, 50, 64],
+            + "L = <4,7,32,72,3> hvor HEAD peker på 4-tallet.<br/><br/>Hvordan vil listen se ut etter LIST-DELETE(L,x) for noden x der x.key = 4?",
+        choices: [
+            "<3,4,7,32,72,3>",
+            "<4,7,32,72,3,3>",
+            "<4,7,32,72,3>",
+            "<4,7,32,72>",
+            "<7,32,72,3>"
+        ],
         correctAnswer: 4
     }, {
         question: "En god hash-funksjon vil, for en tabell av lengde n, kunne garantere for at k < n innsettinger ikke vil gi kollisjon?",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+        choices: ["Ja", "Nei"],
+        correctAnswer: 1
     }, {
         question: "Du får oppgitt at x.key = m og h(m) = j der h er en hash-funksjon. Da er...",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+        choices: [
+            "x elementet, m nøkkelen og j hashen.",
+            "x elementet, j nøkkelen og m hashen.",
+            "j elementet, m nøkkelen og x hashen.",
+            "Ingen av delene"
+        ],
+        correctAnswer: 0
     }, {
         question: "Er h(k) = (k * randint(0,k)) mod m hvor k er nøkkelen og m er størrelsen på hashtabellen en god hashfunksjon? ",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+        choices: ["Ja", "Nei"],
+        correctAnswer: 1
     }, {
         question: "Hva betyr kollisjon (collision) i forbindelse med hash-tabeller?",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+        choices: [
+            "Flere ulike hash-verdier gir samme faktiske verdi.",
+            "Flere ulike faktiske nøkler gir samme hash-verdi.",
+            "Begge alternativene.",
+            "Ingen av alternativene.",
+        ],
+        correctAnswer: 1
     }, {
         question: "Hvis vi har en funksjon DELETE(T,x) der T er en kjedet hash-tabell og x er et listenode, så er worst case kjøretiden... (Legg merke til at x her er en faktisk listenode - ikke en nøkkel) ",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+        choices: [
+            "O(1) både for enkel og dobbel lenket liste.",
+            "O(n) både for enkel og dobbel lenket liste.",
+            "O(n) for enkel lenket liste og O(1) for dobbel lenket liste.",
+            "O(1) for enkel lenket liste og O(n) for dobbel lenket liste.",
+        ],
+        correctAnswer: 3
     }, {
         question: "Hva er worst-case-kjøretiden for innsetting i en hash-tabell om man bruker kjeding ved kollisjoner? Anta at innsettingen også må sjekke om elementet allerede finnes i tabellen.",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+        choices: [
+            "O(1)",
+            "O(lg(n))",
+            "O(n)",
+            "O(nlg(n))"
+                 ],
+        correctAnswer: 3
     }, {
         question: " For å unngå at vi lager for stor initiell hashtabell ønsker vi å doble størrelsen på hashtabellen hver gang lastfaktoren blir 1/4 (lastfaktor beregnes N/M hvor N er antall elementer i hashtabellen og M er størrelsen på hashtabellen). Hvis vi benytter amorisert analyse får vi at kjøretiden for innsetting er ...",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+        choices: [
+            "O(1)",
+            "O(lg(n))",
+            "O(n)",
+            "O(nlg(n))"
+        ],
+        correctAnswer: 0
     }, {
         question: "Anta du har binærtre G og legger til en ny kant i treet. Du vil nå ha...",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+        choices: [
+            "Et binærtre med en kant mer.",
+            "Et tre med høyere grad.",
+            "En syklisk graf.",
+            "Ingen av delene."
+        ],
+        correctAnswer: 3
     }, {
         question: "Hvorfor er amortisert analyse bedre enn vanlig worst-case-beregning i mange tilfeller?",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
+        choices: [
+            "Worst case kan gi ugyldig svar.",
+            "Worst case kan være altfor pessimistisk.",
+            "Amortisert analyse er raskere å beregne.",
+            "Amortisert analyse gir også en nedre grense."
+        ],
+        correctAnswer: 1
     }, {
         question: "What is 8*8?",
         choices: [20, 30, 40, 50, 64],
@@ -215,10 +280,36 @@
         choices: [20, 30, 40, 50, 64],
         correctAnswer: 4
     }, {
-        question: "Whatiis 8*8?",
+        question: "What is 8*8?",
         choices: [20, 30, 40, 50, 64],
         correctAnswer: 4
     }];
+
+    // Shuffles the order of the questions
+    function shuffle(sourceArray) {
+        for (var i = 0; i < sourceArray.length - 1; i++) {
+            var j = i + Math.floor(Math.random() * (sourceArray.length - i));
+
+            var temp = sourceArray[j];
+            sourceArray[j] = sourceArray[i];
+            sourceArray[i] = temp;
+        }
+        return sourceArray;
+    }
+
+    // Shuffles the order of the answers and updates the correct answer
+    function shuffleAnswers(sourceArray) {
+        for (var i = 0; i < sourceArray.length - 1; i++) {
+            var question = sourceArray[i];
+            var answer = question.choices[question.correctAnswer];
+            question.choices = shuffle(question.choices);
+            question.correctAnswer = question.choices.indexOf(answer);
+        }
+        return sourceArray
+    }
+
+    var questions = shuffleAnswers(shuffle(questions));
+    console.log(questions[0]);
 
     var questionCounter = 0; //Tracks question number
     var questionLength = questions.length;
@@ -310,7 +401,7 @@
             id: 'question'
         });
 
-        var header = $('<h2>Question ' + (index + 1) + '/' + questionLength + ':</h2>');
+        var header = $('<h2>Spørsmål ' + (index + 1) + '/' + questionLength + ':</h2>');
         qElement.append(header);
 
         var question = $('<p>').append(questions[index].question);
@@ -386,16 +477,18 @@
                 numCorrect++;
             } else {
                 if (!hasErrors) {
-                    score.append('Oi! Seems like you missed the following questions there partner!<br/><br/>')
+                    score.append('Oi! Ser ut som det gikk litt raskt i svingene'
+                                 + ' der kugutt. Du svare feil på følgende'
+                                 + ' spørsmål: !<br/><br/>')
                     hasErrors = true;
                 }
-                score.append('Question ' + i + 1 + ': ' + questions[i].question)
+                score.append('Spørsmål ' + parseInt(i+1) + ': ' + questions[i].question)
                 score.append('<br/><br/> ')
             }
         }
 
-        score.append('You got ' + numCorrect + ' questions out of ' +
-            questions.length + ' right!!!');
+        score.append('Du svarte riktig på ' + numCorrect + ' av ' +
+            questions.length + 'spørsmål !!!');
         return score;
     }
 })();
