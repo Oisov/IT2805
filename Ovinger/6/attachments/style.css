@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 500;
+    color: orange;
+    padding: 20px 20px;
+}
+
+body {
+    background-color: black;
+}
+
+.superhero-form {
+    max-width: 500px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.superhero-form fieldset {
+    border: none;
+}
+
+.superhero-form legend {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.superhero-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.superhero-form input[type="text"],
+.superhero-form input[type="date"],
+.superhero-form input[type="datetime"],
+.superhero-form input[type="datetime-local"],
+.superhero-form input[type="email"],
+.superhero-form input[type="number"],
+.superhero-form input[type="search"],
+.superhero-form input[type="time"],
+.superhero-form input[type="url"],
+.superhero-form textarea,
+.superhero-form select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255, 255, 255, .1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color: gray;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+
+}
+
+.superhero-form input[type="text"]:focus,
+.superhero-form input[type="date"]:focus,
+.superhero-form input[type="datetime"]:focus,
+.superhero-form input[type="email"]:focus,
+.superhero-form input[type="number"]:focus,
+.superhero-form input[type="search"]:focus,
+.superhero-form input[type="time"]:focus,
+.superhero-form input[type="url"]:focus,
+.superhero-form textarea:focus,
+
+.superhero-form select:focus {
+    background: #d2d9dd;
+}
+
+.superhero-form select {
+    -webkit-appearance: menulist-button;
+    height: 35px;
+}
+
+.superhero-form select:required:invalid {
+    color: gray;
+}
+
+.superhero-form option[value=""][disabled] {
+    display: none;
+}
+
+.superhero-form .number {
+    background: orange;
+    color: #f4f7f8;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.superhero-form input[type="submit"],
+.superhero-form input[type="button"] {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: black;
+    margin: 0 auto;
+    background: orange;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 95%;
+    border: 1px solid #E18700;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+.superhero-form input[type="submit"]:hover,
+.superhero-form input[type="button"]:hover {
+    background: #E18700;
+}
