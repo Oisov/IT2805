@@ -1,0 +1,19 @@
+1. Inline style CSS override rules such that we can have a global style
+   for most elements, but still make changes for single tags.
+
+2. The id selector is unique to only one element, while the class
+   selectior allows us to set a particular style for many HTML elements
+   within the same class.
+
+3. RGBA is an extension of RGB and stands for (red, green, blue, alpha)
+   where alpha is a number determining the opacity from
+   fully transparent at 0 to fullly opaque at 1.
+
+4. Moving CSS to head reduces the number of times the browser must
+   re-flow the document by ensuring that the CSS styles are all parsed
+   in the head, before any body elements are introduced.
+
+   Addidionally the user may experience some flickering if the CSS is
+   applied at the same time the browser renders the body.
+
+5. article p

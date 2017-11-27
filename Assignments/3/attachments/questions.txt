@@ -1,0 +1,22 @@
+1. What is the difference between "position: absolute" and "position: fixed"?
+
+   Fixed elements are independent of everything else on the web page. Regardless
+   of any parents, a fixed position element will always be positioned based on
+   the browser window. Even when the page is scrolled fixed elements stay and
+   are visible.
+
+   An absolutely element is positioned based on its nearest relatively
+   positioned parent element. The position of the absolute element is determined
+   by its parent elements.
+   
+   
+
+2. With CSS3, how do we access the third element within another element?
+
+   Assume that the first element is called e1, and the second element e2. Then
+
+   e1 > e2:nth-child(3) {
+
+   }
+
+   will style the third element within another element regardless of type.
