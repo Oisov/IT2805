@@ -1,6 +1,0 @@
-1. One reason many OS vevelopers intentionally disable autoplay on mobile
-devices is to protect user's bandwidth. As many data providers still charge
-based on the amount of data consumed. 
-2. Since the screen is not between 768px and 1024px it will NOT hide the id logo
-3. Faster webpages, easier maintanance, cost effective. Easier to develop one
-site instead of several.

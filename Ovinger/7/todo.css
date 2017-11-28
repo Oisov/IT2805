@@ -1,4 +1,0 @@
-/* PART 4 - makes the text strikethrough if completed */
-input[type="checkbox"]:checked + label.completed {
-    text-decoration: line-through;
-}
